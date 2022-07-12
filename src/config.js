@@ -9,15 +9,15 @@ import tink from "../sounds/tink.wav";
 import tom from "../sounds/tom.wav";
 
 export const key_config = [
-    { id: "boom", key: "a", sound: boom },
-    { id: "clap", key: "s", sound: clap },
-    { id: "hi_hat", key: "d", sound: hi_hat },
-    { id: "kick", key: "f", sound: kick },
-    { id: "open_hat", key: "g", sound: open_hat },
-    { id: "ride", key: "h", sound: ride },
-    { id: "snare", key: "j", sound: snare },
-    { id: "tim", key: "k", sound: tink },
-    { id: "tom", key: "l", sound: tom },
+  { id: "boom", key: "a", sound: boom },
+  { id: "clap", key: "s", sound: clap },
+  { id: "hi_hat", key: "d", sound: hi_hat },
+  { id: "kick", key: "f", sound: kick },
+  { id: "open_hat", key: "g", sound: open_hat },
+  { id: "ride", key: "h", sound: ride },
+  { id: "snare", key: "j", sound: snare },
+  { id: "tim", key: "k", sound: tink },
+  { id: "tom", key: "l", sound: tom },
 ];
 
 /**
@@ -26,12 +26,12 @@ export const key_config = [
  * @returns {string[]} array of beats (keys)
  */
 export const generateTestBeat = (padding_count) => {
-    const test_keys = ["a", "s", "d", "f", "g"];
-    const generated_array = [];
-    for (let index = 0; index < 10; index++) {
-        generated_array.push(...test_keys);
-    }
-    const array_padding = Array(padding_count).fill("");
+  const test_keys = ["a", "s", "d", "f", "g"];
+  const generated_array = [];
+  for (let index = 0; index < 10; index++) {
+    generated_array.push(...test_keys);
+  }
+  const array_padding = Array(padding_count).fill("");
 
-    return [...array_padding, ...generated_array, ...array_padding];
+  return [...array_padding, ...generated_array, ...array_padding];
 };
